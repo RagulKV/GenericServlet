@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+ 
+ <context-param>
+ 
+ <param-name>AdminName</param-name>
+ <param-value>KVR</param-value>
+ 
+ </context-param>
+ 
+ 
+ 
+ 
+ <servlet>
+ 
+ <servlet-name>Two</servlet-name>
+ <servlet-class>com.cts.ragul.StudentRegisterGenericSrv</servlet-class>
+ 
+
+ 
+ <init-param>
+ 
+ <param-name>url</param-name>
+ <param-value>jdbc:mysql://localhost:3306/Student</param-value>
+ 
+ </init-param>
+ 
+ <init-param>
+ 
+ <param-name>DriverName</param-name>
+ <param-value>com.mysql.cj.jdbc.Driver</param-value>
+ 
+ </init-param>
+ 
+ <init-param>
+ 
+ <param-name>UserName</param-name>
+ <param-value>root</param-value>
+ 
+ </init-param>
+ 
+ <init-param>
+ 
+ <param-name>Password</param-name>
+ <param-value>root</param-value>
+ 
+ </init-param>
+ 
+ </servlet>
+ 
+ <servlet-mapping>
+ 
+ <servlet-name>Two</servlet-name>
+ <url-pattern>/dbsrv</url-pattern>
+ 
+ </servlet-mapping>
+</web-app>
